@@ -170,6 +170,18 @@ footer
     width: 50%; /* في سكشن جانبي لازم يكون لإله مساحة*/
     margin-bottom: 30px;
 }
+
+/* @media (min-width:840px) and (max-width:1180px){
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5,
+    footer{
+        width: 100%;
+    }
+} */
+
 .sidebar{
     width: calc(100vw - 50%);
 }
