@@ -1,0 +1,476 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: 46px;
+}
+header .sec-1 a img{
+    width: 100px;
+    height: 33px;
+    object-fit: cover;
+}
+header .sec-1 a{
+    display: block;
+    margin-top: 4px;
+}
+header a:not(a.search,ul li a){ /*just Google logo */
+    padding: 4px 40px 0;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+    cursor: pointer;
+}
+.sec-1{
+    grid-column: span 1 ; /*shorthand g-c-s and g-c-e */
+}
+.sec-2{
+    grid-column: span 6 ; 
+}
+.empty-space{
+    grid-column: span 4 ; 
+}
+.sec-3{
+    grid-column: span 1 ; 
+}
+
+
+.form-sec{
+    background: #303134;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 3px rgb(23 23 23 / 24%);
+    border-radius: 24px;
+    padding: 11px 10px;
+}
+.form-sec form{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+.form-sec input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #e8eaed;
+    word-wrap: break-word;
+    font-size: 14px;
+    grid-column: span 8;
+}
+.form-sec span{
+    font-weight: bold;
+    padding-right: 6px;
+}
+span.border_right{
+    border-right: 1px solid #e8eaed;
+}
+.g-column-1,
+.voice-icon,
+.cam-icon{
+    grid-column: span 1;
+    padding: 0 6px;
+}
+
+.voice-icon,
+.cam-icon{
+    padding-top: 2px; /*لكي يوازوا ارتفاع الـ g-column-1*/
+}
+a.search{
+
+    object-fit: cover;
+    grid-column: span 1;
+    color: #e8eaed;
+    padding: 1px 6px;
+}
+a.search i{
+    font-size: small;
+}
+.sec-4{
+    padding: 8px 10px;
+    grid-column: span 1 ; 
+
+}
+li{
+    list-style: none;
+}
+.sec-4 ul li{
+    padding: 0 10px;
+}
+
+img.google-app{
+    width:20px ;
+    height:20px ;
+    object-fit: cover;
+}
+img.user-icon{
+    width: 20px ;
+    height:20px ;
+    object-fit: cover;
+    background-color: black;
+    border-radius: 50%;
+}
+ul li a i{
+    color: #e8eaed;
+    font-size: medium;
+    padding-top: 2px;
+}
+.sec-4 ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+/* nav */
+nav{
+    color: #9aa0a6;
+    font-size: 14px;
+    font-family: 'Google Sans',arial,sans-serif;
+    border-bottom: 1px solid #3c4043;
+    margin-top: 30px;
+}
+
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(14,1fr); /* عا14مود أكبر من 12 فالمساحة بين كل عمود وعمود رح تقل وهذا يلي بدي اياه لمن بدي ادمج عمودين بحيث ما يتجاوزا الانبت يلي فوق*/
+    margin-bottom: 10px;
+}
+body{
+    overflow-x: hidden; /* من خلالها تخلصت من المحتوى يلي تجاوز عرض الصفحة أي تخلصت من الأعمدة الاضافية خطوة 137 ناف يو ال*/
+}
+nav ul li{
+    position: relative;
+    left: 180px;
+}
+.nav-7{/*مشروح بخطوة 136 قريد تمبلت رو*/
+    text-align: right; 
+}
+p.result-status {
+    color: #9aa0a6;
+    line-height: 43px;
+    font-family: arial,sans-serif;
+    position: relative;
+    left: 180px;
+}
+
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+footer
+ {
+    color: #bdc1c6;
+    font-family: arial,sans-serif;
+    position: relative;
+    left: 180px; /* حتى يأتي بشكل موازي للذي فوقه*/
+    font-size: 14px;
+    width: 50%; /* في سكشن جانبي لازم يكون لإله مساحة*/
+    margin-bottom: 30px;
+}
+.sidebar{
+    width: calc(100vw - 50%);
+}
+
+/* section-1 */
+
+.section-1 i{
+    margin-bottom: 8px;
+}
+.section-1 p{
+    line-height: 25px;
+    color: #bdc1c6;
+    padding-bottom: 12px;
+    
+}
+.section-1 h3 p{
+    color: #8ab4f8; 
+}
+.sub-section{
+    margin-left: 10px;
+}
+.sub-section a{
+    color: #8ab4f8;
+}
+.sub-section >.pad-style{
+    padding-bottom: 12px;
+}
+.sub-section-E{
+    padding-bottom: 0px !important;
+}
+
+/* section-2 */
+
+.section-2 span{
+    font-family: Google Sans,arial,sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color:#e8eaed;
+}
+div.brdr_btm{
+    border-bottom: 1px solid #3c4043;
+}
+div.brdr_btm span{
+    font-size: 22px;
+}
+
+div.brdr_btm span,
+.marg-tb span
+{
+   display: inline-block;
+   padding-bottom: 8px;
+}
+.marg-tb:not(.section-2-F){
+    margin: 12px 0;
+    border-bottom: 1px solid #3c4043;
+    position: relative;
+}
+
+.marg-tb i{
+    color: aliceblue;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+.brdr-text {
+    position: relative;
+}
+.brdr-text .brdr{
+    background: #3c4043;
+    height: 1px;
+    width: 90%;
+}
+.brdr-text .text{
+    position: absolute;
+    top: -8px;
+    right: -9px;
+    font-size: 12px;
+}
+.brdr-text .text:hover{
+    text-decoration: underline;
+}
+/* section-3 */
+
+.section-3 .span-2
+{
+    color: #969ba1;
+    font-size: 14px;
+    padding-right: 2px;
+}
+.section-3 div a>p{
+    padding: 8px 0;
+    color: #8ab4f8;
+    font-size: 20px;
+}
+.span-3{
+    color: #bdc1c6;
+    font-size: 14px;
+    display: inline-block;
+    padding-bottom: 33px;
+}
+.blue-color{
+    color: #8ab4f8;
+}
+a.blue-color{
+    font-size: 14px;
+}
+
+/* section-4 */
+.section-4{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+}
+
+.R-Search{
+background-color: #303134;
+border-radius: 100px;
+min-height: 48px;
+padding: 15px 17px;
+grid-column: span 6;
+}
+
+/* section-5 */
+
+.section-5 .G{ /* تم جلبها من قائمة المطورين في المتصفح*/
+    background:url(/image/nav_logo321_hr.webp) no-repeat;
+    background-position:-24px -112px;
+    background-size:167px;
+    display: inline-block;
+    height: 40px;
+    width:28px;
+}
+.section-5 .o{ /* تم جلبها من قائمة المطورين في المتصفح*/
+    background: url(/image/nav_logo321_hr.webp) no-repeat;
+    background-position: -53px -112px;
+    background-size: 167px;
+    width: 20px;
+    display: inline-block;
+    height: 40px;
+}
+
+.section-5 .gle{ /* تم جلبها من قائمة المطورين في المتصفح*/
+    background: url(/image/nav_logo321_hr.webp) no-repeat;
+    background-position: -96px -112px;
+    background-size: 167px;
+    width: 71px;
+    display: inline-block;
+    height: 40px;
+}
+.section-5{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    text-align: center;    
+    position: relative; /*توسيط اليو ال*/
+
+}
+.section-5 a{
+    grid-column: span 12 ;
+}
+
+/*section-5 page nav */
+.page-nav{
+    padding-top: 20px;
+}
+.section-5 ul{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 50px;
+}
+.section-5 ul li a{
+    color: #8ab4f8;   
+}
+/* footer */
+footer{
+    padding: 12px 0;
+}
+
+.foot-1 span{
+    font-size: 15px;
+    color: #9aa0a6;
+}
+.foot-1 div{
+    display: inline-block;
+    margin-left: 13px;
+    padding-left: 16px;
+    border-left: 1px solid #3c4043;
+    color: #bdc1c6;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.foot-1{
+    border-bottom: 1px solid #3c4043;
+}
+
+.foot-2 a{
+    display: inline-block;
+    padding: 30px 20px 0 0;
+    color: #bdc1c6;
+}
+/* sidebar */
+section.sidebar{
+    border: 1px solid white;
+}
+.parts img{
+    width:90% ;
+    height:90% ;
+    object-fit: contain;
+}
+.sidebar .parts{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 100px 100px;
+    gap: 4px;
+    position: absolute;
+    top: 180px;
+    right: 0;
+    border: 1px solid #e8eaed;
+    margin-right: 10px;
+    width: 400px;
+
+}
+.parts div:nth-child(1){
+    grid-column: span 6;
+    grid-row: span 2;
+}
+.parts div:nth-child(2){
+    grid-column: span 6;
+}
+.parts div:nth-child(3){
+    grid-column: span 6;
+}
+.sub-parts {
+    padding: 10px 20px;
+    grid-column: span 12;
+    position: relative;
+}
+.sub-parts i{
+    margin-left: auto;
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+.sub-parts span{
+    display: block;
+    border-bottom: 1px solid #3c4043;
+    padding-bottom: 10px;
+    color:#bdc1c6;
+}
+.sub-parts-1 {
+    grid-column: span 12;
+}
+.sub-parts-1 p{
+    padding: 10px 20px;
+    color: #bdc1c6;
+}
+.sub-parts-1 p a{
+    color: #8ab4f8;
+}
+.sub-parts-1 p span{
+    color: #8ab4f8;
+    cursor: pointer;
+}
+.sub-parts-1 p span:hover{
+    text-decoration: underline;
+}
+
+.sub-parts-2 {
+    grid-column: span 12;
+    padding: 0 20px;
+    color: #e8eaed;
+    position: relative;
+}
+.sub-parts-2 span {
+    margin-left: auto;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+}
+.sub-parts-2 span:hover {
+    text-decoration: underline;
+}
+
+.product-1,
+.product-2,
+.product-3,
+.product-4{
+    grid-column: span 3;
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+}
+figcaption{
+    text-align: center;
+    color: #8ab4f8;
+    cursor: pointer;
+}
+figcaption:hover{
+    text-decoration: underline;
+}
