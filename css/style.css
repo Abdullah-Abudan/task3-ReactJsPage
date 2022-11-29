@@ -396,6 +396,12 @@ section.sidebar{
     width: 400px;
 
 }
+/* media query - sidebar */
+@media (max-width:1180px) {
+    .sidebar{
+        display: none;
+    }
+}
 .parts div:nth-child(1){
     grid-column: span 6;
     grid-row: span 2;
